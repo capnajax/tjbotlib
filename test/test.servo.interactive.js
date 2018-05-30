@@ -39,7 +39,7 @@ console.log("  bottom: moves the servo to the bottom of the range (" + tj._SERVO
 console.log("  wave: make the arm wave");
 
 var servoPosition = tj._SERVO_ARM_UP;
-tj.raiseArm();
+tj.wave();
 
 // listen for speech
 tj.listen(function(msg) {
@@ -64,3 +64,4 @@ tj.listen(function(msg) {
         tj.wave();
     }
 });
+
